@@ -3,8 +3,8 @@
 Errors will happen. What can we do?
 
 - Fault Tolerance
-- Skip (skipLimit)
-- Retry (retryLimit)
+- Skip - skipLimit(n)
+- Retry - retryLimit(n)
 
 '''
 
