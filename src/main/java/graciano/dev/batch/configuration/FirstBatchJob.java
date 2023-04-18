@@ -38,7 +38,7 @@ public class FirstBatchJob {
   public Step firstStep(JobRepository jobRepository,
                         PlatformTransactionManager transactionManager) {
     return new StepBuilder("firstStep", jobRepository)
-      .<Rental, Rental>chunk(500, transactionManager)
+      .<Rental, Rental>chunk(2, transactionManager)
       .reader(firstReader(null))
       .writer(firstWriter(null))
       .build();
