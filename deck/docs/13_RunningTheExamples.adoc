@@ -1,0 +1,49 @@
+= About this repository
+
+This document explains how to run the examples from this repository.
+
+## Requirements
+
+- Java 17
+- MySQL running on port 3306
+- Import the schema.sql file to the running MySQL instance
+- Build the project `mvn clean verify`
+
+## Jobs
+
+### FirstJob
+
+It's a simple job with a flat file reader and a JdbcWriter.
+
+To run:
+
+`java -jar batch-0.0.1-SNAPSHOT.jar --spring.profiles.active=first`
+
+### MultiFileJob
+
+Introduces Multi File Reader
+To run:
+
+`java -jar batch-0.0.1-SNAPSHOT.jar --spring.profiles.active=multi`
+
+### MultiStepJob
+
+Introduces Multiple Steps
+To run:
+
+`java -jar batch-0.0.1-SNAPSHOT.jar --spring.profiles.active=steps`
+
+### FaultTolerantJob
+
+Explains fault tolerance properties of Spring Batch.
+
+To run:
+
+`java -jar batch-0.0.1-SNAPSHOT.jar --spring.profiles.active=fault`
+
+'''
+
+|===
+| link:12_Scaling.adoc[◀️ #Scaling Jobs#] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link:../../README.adoc[#Start# 🔼]
+|===
+
