@@ -27,7 +27,7 @@ import javax.sql.DataSource;
 @Profile("multi")
 public class MultiFile {
 
-  @Value("classpath:lib*.csv")
+  @Value("classpath:lib10*.csv")
   private Resource[] inputResources;
 
   @Bean

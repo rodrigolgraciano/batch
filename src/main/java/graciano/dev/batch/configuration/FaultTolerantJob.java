@@ -115,7 +115,7 @@ public class FaultTolerantJob {
   public FlatFileItemReader<Rental> ftReader() {
     return new FlatFileItemReaderBuilder<Rental>()
       .name("ftReader")
-      .resource(new ClassPathResource("lib10.csv"))
+      .resource(new ClassPathResource("libft.csv"))
       .delimited()
       .names("id", "title", "isbn", "user")
       .fieldSetMapper(new RecordFieldSetMapper<>(Rental.class))
