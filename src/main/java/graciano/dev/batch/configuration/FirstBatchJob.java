@@ -52,7 +52,7 @@ public class FirstBatchJob {
       .name("firstReader")
       .resource(resource)
       .delimited()
-      .names("id", "title", "isbn", "user")
+      .names("title", "isbn", "user")
       .fieldSetMapper(new RecordFieldSetMapper<>(Rental.class))
       .build();
   }
@@ -62,7 +62,7 @@ public class FirstBatchJob {
     return new JdbcBatchItemWriterBuilder<Rental>()
       .dataSource(dataSource)
       .beanMapped()
-      .sql("INSERT INTO rental (ID, TITLE, ISBN, USER) VALUES (:id, :title, :isbn, :user)")
+      .sql("INSERT INTO rental (TITLE, ISBN, USER) VALUES (:title, :isbn, :user)")
       .build();
   }
 }

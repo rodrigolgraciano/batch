@@ -60,7 +60,7 @@ public class MultiStep {
       .name("firstReader")
       .resource(resource)
       .delimited()
-      .names("id", "title", "isbn", "user")
+      .names("title", "isbn", "user")
       .fieldSetMapper(new RecordFieldSetMapper<>(Rental.class))
       .build();
   }
@@ -70,7 +70,7 @@ public class MultiStep {
     return new JdbcBatchItemWriterBuilder<Rental>()
       .dataSource(dataSource)
       .beanMapped()
-      .sql("INSERT INTO rental (ID, TITLE, ISBN, USER) VALUES (:id, :title, :isbn, :user)")
+      .sql("INSERT INTO rental (TITLE, ISBN, USER) VALUES (:title, :isbn, :user)")
       .build();
   }
 
@@ -88,7 +88,7 @@ public class MultiStep {
     return new JdbcCursorItemReaderBuilder<Rental>()
       .name("dbReader")
       .dataSource(dataSource)
-      .sql("SELECT ID, TITLE, ISBN, USER FROM rental WHERE user LIKE 'M%'")
+      .sql("SELECT TITLE, ISBN, USER FROM rental WHERE user LIKE 'M%'")
       .rowMapper(new DataClassRowMapper<>(Rental.class))
       .build();
   }

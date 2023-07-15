@@ -1,8 +1,8 @@
-= Scaling Batch Jobs
+= Batch Applications
 
 image:deck/images/Batch.png[Batch Vocabulary]
 
-~#Rodrigo&nbsp;Graciano#~ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;~#link:https://twitter.com/rodrigograciano[@rodrigograciano]#~ &nbsp; &nbsp; &nbsp; &nbsp;
+~#Rodrigo&nbsp;Graciano#~ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;~#Chandra&nbsp;Guntur#~ &nbsp; &nbsp; &nbsp; &nbsp;
 
 
  https://github.com/rodrigolgraciano/batch.git
@@ -12,7 +12,7 @@ image:deck/images/Batch.png[Batch Vocabulary]
 
 [caption=" ", .center, cols="<40%, ^20%, >40%", width=95%, grid=none, frame=none]
 |===
-| link:deck/docs/RodrigoGraciano.adoc[◀️ #Rodrigo Graciano#]
+|
 | &nbsp;
 | link:deck/docs/01_SpringBatch.adoc[#Spring Batch# ▶️]
 |===

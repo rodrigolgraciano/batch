@@ -6,8 +6,8 @@ import org.springframework.batch.item.ItemProcessor;
 
 public class RentalProcessor implements ItemProcessor<Rental, Rental> {
   @Override
-  public Rental process(Rental item) throws Exception {
-    return item.id() % 2 == 0 ? null :
-      new Rental(item.id(), item.title(), item.isbn(), item.user().toUpperCase());
+  public Rental process(Rental item) {
+    return item.hashCode() % 2 == 0 ? null :
+      new Rental(item.title(), item.isbn(), item.user().toUpperCase());
   }
 }

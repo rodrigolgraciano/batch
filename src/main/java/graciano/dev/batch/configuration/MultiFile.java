@@ -61,7 +61,7 @@ public class MultiFile {
     return new FlatFileItemReaderBuilder<Rental>()
       .name("simpleItemReader")
       .delimited()
-      .names("id", "title", "isbn", "user")
+      .names("title", "isbn", "user")
       .fieldSetMapper(new RecordFieldSetMapper<>(Rental.class))
       .build();
   }
@@ -69,7 +69,7 @@ public class MultiFile {
   @Bean
   public JdbcBatchItemWriter<Rental> raceDBWriter(DataSource dataSource) {
     return new JdbcBatchItemWriterBuilder<Rental>()
-      .sql("INSERT INTO rental (ID, TITLE, ISBN, USER) VALUES (:id, :title, :isbn, :user)")
+      .sql("INSERT INTO rental (TITLE, ISBN, USER) VALUES (:title, :isbn, :user)")
       .dataSource(dataSource)
       .beanMapped()
       .build();
