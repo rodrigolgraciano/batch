@@ -1,6 +1,7 @@
 package graciano.dev.batch.configuration;
 
 import graciano.dev.batch.domain.Rental;
+import graciano.dev.batch.listener.RentalJobListener;
 import graciano.dev.batch.processor.RentalProcessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,12 +34,19 @@ import javax.sql.DataSource;
 @Profile("fault")
 public class FaultTolerantJob {
 
+  private final RentalJobListener rentalJobListener;
+
     private static final Logger log = LoggerFactory.getLogger(FaultTolerantJob.class);
 
-    @Bean
+  public FaultTolerantJob(RentalJobListener rentalJobListener) {
+    this.rentalJobListener = rentalJobListener;
+  }
+
+  @Bean
     public Job ftJob(JobRepository jobRepository) {
         return new JobBuilder("ft", jobRepository)
                 .incrementer(new RunIdIncrementer())
+                .listener(rentalJobListener)
                 .start(ftStep(null, null))
                 .build();
     }
