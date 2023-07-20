@@ -22,5 +22,5 @@ public void afterJob(JobExecution jobExecution){}
 '''
 
 |===
-| link:08_Processors.adoc[◀️ #Processors#] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link:10_MultipleSteps.adoc[#Multiple Steps# ▶️]
+| link:08_Processors.adoc[◀️ #Processors#] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link:10_MultipleSteps_Sequential.adoc[#Multiple Steps# ▶️]
 |===

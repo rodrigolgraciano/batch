@@ -1,0 +1,13 @@
+= Fault Tolerance
+
+Errors will happen. What can we do?
+
+- Fault Tolerance
+- Skip - skipLimit(n)
+- Retry - retryLimit(n)
+
+'''
+
+|===
+| link:12_MultipleSteps_Split.adoc[◀️ #Split Step#] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link:14_Scaling.adoc[#Scaling Jobs# ▶️]
+|===

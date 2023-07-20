@@ -1,7 +1,8 @@
 = Rodrigo Graciano
 
 image::../images/RodrigoGraciano.png[Rodrigo Graciano, 150, float="right", align="center"]
-=== Java Champion
+=== Java Champion, ACE Pro
+=== Director of Engineering at BNY Mellon
 === JCP Executive Committee Rep. for BNY Mellon
 === Programming in Java since 1998
 === JUG Leader link:https://twitter.com/nyjavasig[@NYJavaSIG]

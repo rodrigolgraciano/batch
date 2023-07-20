@@ -11,5 +11,5 @@ There are 5 (Five) different ways that we can use to scale our batch jobs.
 '''
 
 |===
-| link:11_FaultTolerance.adoc[◀️ #Fault Tolerance#] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link:13_RunningTheExamples.adoc[#Examples# ▶️]
+| link:13_FaultTolerance.adoc[◀️ #Fault Tolerance#] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link:15_RunningTheExamples.adoc[#Running the Examples# ▶️]
 |===

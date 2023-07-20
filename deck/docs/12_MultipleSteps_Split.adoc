@@ -1,0 +1,11 @@
+= Multiple Steps
+
+
+== Split
+image:../images/flow_split.png[Split]
+
+'''
+
+|===
+| link:11_MultipleSteps_Conditional.adoc[◀️ #Conditional Step#] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link:13_FaultTolerance.adoc[#Fault Tolerance# ▶️]
+|===
