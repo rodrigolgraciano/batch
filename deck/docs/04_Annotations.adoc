@@ -2,7 +2,8 @@
 
 === Spring Batch supports XML and annotations (or the lack of it) to configure your jobs.
 
-=== @EnableBatchProcessing annotation gives you out of the box:
+[.line-through]#@EnableBatchProcessing# annotation gives you out of the box:
+
 . JobRepository
 . JobLauncher
 . JobRegistry
