@@ -1,7 +1,5 @@
 = First Job
 
-Let's define our first Job. Our job will read from a file and write to a file.
-
 Job
 [source, java, linenums]
 ----

@@ -47,7 +47,7 @@ public class FaultTolerantJob {
         return new JobBuilder("ft", jobRepository)
                 .incrementer(new RunIdIncrementer())
                 .listener(rentalJobListener)
-                .start(ftStep(null, null))
+                .start(nonFtStep(null, null))
                 .build();
     }
 

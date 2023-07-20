@@ -1,10 +1,9 @@
 = Spring Batch
 
 
-=== Lightweight framework
+=== Lightweight framework, simple architecture
 === Finite amount of data
 === Not a scheduler
-=== Simple architecture
 
 '''
 
